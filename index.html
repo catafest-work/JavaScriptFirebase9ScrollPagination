@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firebase 9 - Scroll pagination</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container"></div>
+  <div class="loading">loading data...</div>
+
+  <div class="load-more">
+    <button>Load More</button>
+  </div>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "",
+      authDomain: "javascriptfirebase001.firebaseapp.com",
+      projectId: "javascriptfirebase001",
+      storageBucket: "javascriptfirebase001.appspot.com",
+      messagingSenderId: "",
+      appId: ""
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    //const db = firebase.firestore();
+    //console.log("db ",db)
+  </script>
+  <script src="index.js"></script>
+</body>
+</html>
